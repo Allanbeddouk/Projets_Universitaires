@@ -4,5 +4,5 @@
 
 # Description : Implémentation d'un programme sur une carte à microcontroleur. Le robot doit suivre une ligne formant un parcours, tout en prenant des mesures à l'aide de capteur latéraux de murs en carton. À la fin, le robot doit avoir correctement suivi le parcours et afficher les bonnes longueurs des murs mesurées à droite et à gauche.
 
-# Codé entièrement en C++.
+# Codé entièrement en C++. (Les fichiers sont dans la librairie que nous avons créée "./lib/src")
 
