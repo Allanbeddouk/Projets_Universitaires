@@ -1,6 +1,6 @@
 # Projet de 2ème année réalisé sur 4 mois (Janvier 2019 à Avril 2019) , avec Astrid SOUMOY, Jonathan BORDELEAU, Lucas JAULENT, Guillaume L'ECUYER & Pablo CHAUSSÉ-COSSIO, consistant à concevoir une application Angular illustrant un jeu WEB des 7 différences ("Spot the difference" en Anglais). Il y aurait 2 modes de jeu (un solo ou en multijoueur sur un même réseau) dont une recherche des différences en 2D et une autre dans un environnement 3D (Utilisé avec ThreeJS).
 
-# Description : Implémenter une Application Angular avec une architecture Client et Serveur suivant le principe Full Stack. Notamment avec l'utilisation du système de base de données MongoDB pour pouvoir stocker les jeux et les données utilisateur. 
+# Description : Implémenter une Application Angular avec une architecture Client et Serveur suivant le principe MEAN. L'objecitf étant de pouvoir jouer/créer des jeux WEB par le biais d'une interface centrée utilisateur.
 
 # Instructions pour lancer l'application : 
 - Avoir installer NodeJS et Angular.
