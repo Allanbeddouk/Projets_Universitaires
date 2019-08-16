@@ -1,0 +1,41 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=KoHo');
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+</style>
+<mat-card id="container">
+    <h1 id="gameName">{{myGame.name}}</h1>
+    <div id="ficheBody">   
+        <img src={{imgPath}}>
+        <div id="modesContainer">
+            <div id="solo">
+                <h2>Solo</h2>
+                <div class="times">
+                    <p *ngFor="let hs of myGame.hsSolo">{{hs.name}} - {{hs.minutes}}:{{hs.seconds}}</p>                    
+                </div>
+                <ng-template [ngIf]="adminMode" [ngIfElse]="playMode">
+                    <button *ngIf="!initializeVisible && !deleteVisible" type="button" class="btn btn-warning" (click)="initializeVisible=true" id="reinit">Réinitialiser</button>
+                    <button *ngIf="deleteVisible" type="button" class="btn btn-light" (click)="deleteVisible=false" id="deleteCancel">Annuler</button>
+                    <button *ngIf="initializeVisible" type="button" class="btn btn-light" (click)="initializeVisible=false" id="initializeCancel">Annuler</button>
+                </ng-template>
+                <ng-template #playMode>
+                    <button type="button" class="btn btn-primary" id="jouer" (click)="startGame()">Jouer</button>
+                </ng-template>
+            </div>
+            <div id="oneVSone">
+                <h2>1v1</h2>                
+                <div class="times">
+                    <p *ngFor="let hs of myGame.hs1v1">{{hs.name}} - {{hs.minutes}}:{{hs.seconds}}</p>
+                </div>
+                <ng-template [ngIf]="adminMode" [ngIfElse]="createMode">
+                    <button *ngIf="!initializeVisible && !deleteVisible" type="button" class="btn btn-danger" (click)="deleteVisible=true" id="delete">Supprimer</button>
+                    <button *ngIf="deleteVisible" type="button" class="btn btn-danger" (click)="deleteGame() && deleteVisible=false" id="delete">Confirmer</button>
+                    <button *ngIf="initializeVisible" type="button" class="btn btn-danger" (click)="initializeGame() && initializeVisible=false" id="delete">Confirmer</button>
+                </ng-template>
+                <ng-template #createMode>
+                    <button *ngIf="!isGameCreated" type="button" class="btn btn-warning" id="creer" (click)= "createGame()">Créer</button>
+                    <button *ngIf="isGameCreated" type="button" class="btn btn-success" id="joindre" (click)= "joinGame()">Joindre</button>
+                </ng-template>
+            </div>
+        </div>
+    </div>
+</mat-card>

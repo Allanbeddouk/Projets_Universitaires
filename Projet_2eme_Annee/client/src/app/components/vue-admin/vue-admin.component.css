@@ -1,0 +1,32 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.mat-stroked-button {
+    margin-left: 30px;
+    background-color: #E5F2F9;
+    color:#424351;
+}
+.mat-toolbar.mat-primary {
+    background: #424351;
+    color: #E5F2F9;
+    box-shadow: #424351 0px 5px 10px;
+}
+
+.mat-toolbar{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    height: 75px;
+    font-weight: bold;
+}
+
+.app-creation-jeu-vue-simple {
+    position: relative;
+    display: flex;
+}
+.app-liste-parties {
+    position: fixed;
+    display: inline;
+}
+
+
+

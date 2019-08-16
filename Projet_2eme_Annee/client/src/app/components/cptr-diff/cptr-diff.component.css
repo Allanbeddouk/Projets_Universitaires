@@ -1,0 +1,29 @@
+  .container {
+    display: flex;
+    position: inherit;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    width: fit-content;
+  }
+  .steps {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: fit-content;
+    margin-top: 10px;
+    max-width: 400px;
+  }
+  .step {
+    margin: 4px;
+    width: 28px;
+    height: 28px;
+    background: white;
+    border: 3px solid #A5AFBA;
+    border-radius: 50%;
+    transition: background 1s;
+  }
+  .step.completed {
+    border: 3px solid #A5AFBA;
+    background: #A5AFBA; 
+  }

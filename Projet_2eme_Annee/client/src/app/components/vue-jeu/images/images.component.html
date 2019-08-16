@@ -1,0 +1,10 @@
+<div class="gameViews" #page>
+  <div class="gameView" (click)="imagesService.activateOriginalView()" #originalView>
+      <div *ngIf="imagesService.isMissed[0]" class="errorI" [style.left.px]="imagesService.position.x" [style.top.px]="imagesService.position.y">Erreur</div>
+      <canvas class="imageCanvas" #originalCanvas width="640" height="480" (click)="updateImages($event)"></canvas>
+  </div>
+  <div class="gameView" (click)="imagesService.activateModifiedView()" #modifiedView>
+      <div *ngIf="imagesService.isMissed[1]" class="errorI" [style.left.px]="imagesService.position.x" [style.top.px]="imagesService.position.y">Erreur</div>
+      <canvas class="imageCanvas" #modifiedCanvas width="640" height="480" (click)="updateImages($event)"></canvas>
+  </div>
+</div>

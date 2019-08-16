@@ -1,0 +1,48 @@
+<div class="overlay" [class.invisible]="!conditionVisibleSimple"></div>
+<form #formdiff class = "formulaire" [class.invisible]="!conditionVisibleSimple" [class.blur]="submitCompleted" (keyup.escape)="cancelForm()">
+  <h1>Créer un jeu point de vue simple</h1>
+
+  <div class="inputs">
+    <h2>Nom du jeu</h2>
+    <div>
+      <input name="gameName" [(ngModel)]="creationJeuSimpleService.gameName" [class.errorName]="errorName" [class.nameExist]="nameExist" type="text" maxlength="20"/>
+      <div class="error" *ngIf="errors.errorName">Le nom du jeu doit contenir entre 3 et 20 caractères</div>
+      <div class="error" *ngIf="errors.nameExist">Le nom du jeu existe déjà</div>
+    </div>
+    <h2>Image originale
+        <h6>Format d'image: bitmap 24-bit (640x480)</h6>
+    </h2>
+
+    <div>
+      <input id="inputOG" type="file" #originalImage accept=".bmp" name="originale"/>
+      <div class="error" *ngIf="errors.originalImageEmpty">Une image est obligatoire</div>
+    </div>
+
+    <h2>Image modifiée
+        <h6>Format d'image: bitmap 24-bit (640x480)</h6>
+    </h2>
+
+    <div>
+      <input id="inputMOD" type="file" #modifiedImage accept=".bmp" name="modifiee"/>
+      <div class="error" *ngIf="errors.modifiedImageEmpty">Une image est obligatoire</div>
+    </div>
+
+  </div>
+
+  <div class="align">
+    <button id="cancelButton" type="button" (click)="cancelForm()">Annuler</button>
+    <input id="submitButton" type="submit" (click)="submit()" value="Soumettre" class="button"/>
+  </div>
+
+  <form id="failedCreation" *ngIf="errors.error7Diff">Création Annulée! <br> L'image ne comporte pas 7 différences...
+    <button type="button" (click)="errors.error7Diff = false">OK</button>
+  </form>
+
+  <div class="submitDone" [class.submitDone]="errors.submitCompleted" [class.invisible]="!errors.submitCompleted">
+      <div>La création du jeu a été effectuée avec <br> succès!</div>
+      <button id="CreationSuccesButton" type="button" (click)="cancelForm(); reloadLocation()">Ok</button>
+  </div>
+
+</form>
+
+

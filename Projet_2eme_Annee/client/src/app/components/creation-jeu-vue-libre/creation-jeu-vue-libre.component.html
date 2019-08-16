@@ -1,0 +1,57 @@
+<div class="overlay" [class.invisible]="!conditionVisibleLibre"></div>
+<form id="formdiff" class = "formulaire" [class.invisible]="!conditionVisibleLibre" (keyup.escape)="cancelForm()">
+  <h1>Créer un jeu point de vue libre</h1>
+
+  <div class="inputs">
+    <h2>Nom du jeu</h2>
+    <div>
+      <input name="name" [(ngModel)]="creationJeuLibreService.gameName" [class.errorName]="errorName" [class.nameExist]="nameExist" type="text" maxlength="20"/>
+      <div class="error" *ngIf="errors.errorName">Le nom du jeu doit contenir entre 3 et 20 caractères</div>
+      <div class="error" *ngIf="errors.nameExist">Le nom du jeu existe déjà</div>
+    </div>
+    <h2>Type d'objets</h2>
+
+    <div>
+      <select name="select" [(ngModel)]="creationJeuLibreService.selection">
+        <option value="geometric">Formes géométriques</option>
+        <option value="thematic">Thématique</option>
+      </select>
+    </div>
+
+    <h2>Quantité d'objet</h2>
+
+    <div>
+      <div>
+          <input type="number" name="quantity" [(ngModel)]="creationJeuLibreService.quantity" min="10" max="200"/>
+          <div class="error" *ngIf="errors.errorQuantity">La quantité d'objet doit être entre 10 et 200</div>
+          <h6>Minimum de 10 et maximum de 200</h6>
+      </div>    
+    </div>
+
+    <h2>Type de modifications</h2>
+
+    <div>
+        <input type="checkbox" [checked]="creationJeuLibreService.modifications.addItem" (change)="creationJeuLibreService.modifications.addItem = !creationJeuLibreService.modifications.addItem">Ajout<br>
+        <input type="checkbox" [checked]="creationJeuLibreService.modifications.deleteItem" (change)="creationJeuLibreService.modifications.deleteItem = !creationJeuLibreService.modifications.deleteItem">Suppression<br>        
+        <input type="checkbox" [checked]="creationJeuLibreService.modifications.changeColor" (change)="creationJeuLibreService.modifications.changeColor = !creationJeuLibreService.modifications.changeColor">Changement de couleur<br>
+        <div class="error" *ngIf="errors.errorCheck">Vous devez selectionner au moins un type de modification</div>
+    </div>
+
+  </div>
+
+  <div class="align">
+    <button id="cancelButton" type="button" (click)="cancelForm()">Annuler</button>
+    <input id="submitInput" type="submit" (click)="submit()" value="Soumettre" class="button"/>
+  </div>
+
+  <div class="loadingScenes" [class.loadingScenes]="creationJeuLibreService.showScenes" [class.invisible]="!creationJeuLibreService.showScenes">
+      Veuillez patienter pendant la generation des scenes...
+    </div>
+    
+    <div class="submitDone" [class.submitDone]="submitCompleted"  [class.invisible]="!submitCompleted">
+        <div>La création du jeu a été effectuée avec <br> succès!</div>
+        <button id="CreationSuccesButton" type="button" (click)="cancelForm(); reloadLocation()">Ok</button>
+    </div>
+</form>
+
+<app-vue3-d *ngIf="creationJeuLibreService.showScenes" style="display: none"></app-vue3-d>

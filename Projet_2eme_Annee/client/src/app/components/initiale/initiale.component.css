@@ -1,0 +1,85 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+#logo {
+    display: flex;
+    justify-self: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top:10px;
+    height: 240px;
+    max-height: 240px;
+    width: 30%;
+    height: 50%;
+    margin-bottom: 50px;
+}
+#app-initiale{
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+#block {
+    background-color: #A5AFBA;
+    width: 760px;
+    height: 500px;
+    border-radius: 1em;
+    box-shadow:#424351 5px 5px 8px;
+    color: #424351;
+    text-align: center;
+}
+
+h1{
+    margin: 0px;
+    height: 50px;
+    min-width: 400px;
+    line-height: 48px;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif; 
+    color: inherit;
+    padding-top: 50px;
+    padding-bottom: 15px;
+}
+input {
+    font-size: 15px;
+    margin-right: 5px;
+    margin-left: 3px;
+    border: none;
+    border-bottom: 1px solid #424351;
+    font-family: inherit;
+    color: inherit;
+    height: 29px;
+    border-radius: 4px;
+    padding: 0px 8px;
+    background-color: #ffffff44;
+}
+#instruction {
+    font-family: 'KoHo', sans-serif;
+    font-size: 18px;
+    margin-top: 50px;
+}
+input:focus {
+    outline: none;
+}
+
+.error {
+    color: red;
+}
+
+#app-initiale {
+    font-family: 'Exo 2', sans-serif;
+    text-align:center;
+    color:#424351;
+    min-height: 100vh;
+    min-width: 475px;
+    z-index: 1;
+}
+
+#start {
+    background-color: #424351;
+    color: rgb(243, 243, 243);
+    font: bold;
+    line-height: 30px;
+    height: 30px;
+    margin-top: 2px;
+    margin-left: 4px;
+}

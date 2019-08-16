@@ -1,0 +1,210 @@
+.formulaire{
+    z-index: 3;
+    background-color: #A5AFBA;
+    display: block;
+    padding: 30px;
+    position: fixed;
+    max-width: 580px;
+    width: 580px;
+    left: 50%;
+    top: 45%;
+    margin-left: -290px;
+    margin-top: -237px;
+    border-radius: 12px;
+    box-shadow: #424351 5px 5px 8px;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;	
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .55;
+    z-index: 2;
+}
+
+h1{
+    color: #424351;
+    font-weight: bold; 
+    margin: 0px;
+}
+h2{
+    color: #424351; 
+    align-self: center;
+    margin-top: 18px;
+    margin-bottom: 18px
+}
+
+input[type="number"]{
+    width: 100%;
+    padding-left: 8px;
+    height: 30px;
+    border : 2px solid #424351B0;
+    border-radius: 7px;
+    transform: translateY(10px);
+}
+
+input[type="checkbox"]{
+    width: 20px;
+}
+
+select{
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    border : 2px solid #424351B0;
+    padding-left: 3px;
+}
+
+.inputs{
+    display: grid;
+    grid-template-columns: 240px 280px ;
+    align-items: center;
+}
+
+input[type='text']{
+    border : 2px solid #424351B0;
+    border-radius: 7px;
+    width: 100%;
+    height: 30px;
+    padding-left: 8px;
+}
+
+h6{
+    color: rgb(66, 67, 81);
+    margin: 0px 2px;
+    padding: 0px;
+    opacity: 0.90;
+    float: left;
+    transform: translate(2px,10px);
+}
+
+.align{
+    display: inline-block;
+}
+
+.invisible {
+    display: none
+}
+
+#failedCreation {
+    background-color: #A5AFBA;
+    color: #424351;
+    padding: 12px 30px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 100%;
+    margin: 15px auto;
+    margin-left: auto;
+    margin-right: auto;
+    column-fill: balance;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px;
+}
+
+#failedCreation button {
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: 25px;
+    border-radius: 8px;
+    background-color: #E5F2F9;
+    color: #424351;
+    border: none;
+    width: 85px;
+}
+
+.errorCheck{
+    border: 2px solid red !important;
+}
+
+.errorQuantity{
+    border: 2px solid red !important;
+}
+
+.errorName{
+    border: 2px solid red !important;
+}
+
+.nameExist{
+    border: 2px solid red !important;
+}
+
+.error{
+    color: red;
+    font-size: 10px;
+    transform: translateY(8px);
+    margin: -8px 2px;
+}
+
+.submitDone{
+    background-color: #A5AFBA;
+    color: #424351;
+    padding: 12px 30px;
+    margin-top: 15px;
+    width: 520px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 100%;
+    column-fill: balance;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px;
+}
+
+#CreationSuccesButton {
+    font-weight: normal;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: 0px;
+    margin-left: auto;
+    border-radius: 8px;
+    background-color: #E5F2F9;
+    color: #424351;
+    border: none;
+    width: 85px;
+}
+
+.blur{
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.loadingScenes {
+    background-color: #A5AFBA;
+    color: #424351;
+    padding: 12px 30px;
+    margin-top: 15px;
+    width: 520px;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    position: absolute;
+    top: 100%;
+    column-fill: balance;
+    align-items: center;
+    justify-content: center; 
+    border-radius: 12px;
+    box-shadow: 5px 5px 10px;
+}
+
+#submitInput, #cancelButton  {
+    border-radius: 8px;
+    margin: 0px 8px 0px 0px;
+    background-color: #E5F2F9;
+    color: #424351;
+    border: none;
+    width: 85px;
+}

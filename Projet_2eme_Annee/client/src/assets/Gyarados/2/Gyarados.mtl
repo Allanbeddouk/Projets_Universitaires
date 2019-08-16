@@ -1,0 +1,47 @@
+# Blender MTL File: 'None'
+# Material Count: 4
+
+newmtl Material__140
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 9.000000 9.000000 9.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  assets/Gyarados/2/pm0130_00_BodyB1.png
+
+newmtl Material__141
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 9.000000 9.000000 9.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  assets/Gyarados/2/pm0130_00_Eye1.png
+
+newmtl Material__142
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 9.000000 9.000000 9.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd  assets/Gyarados/2/pm0130_00_BodyA1.png
+
+newmtl Material__143
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 9.000000 9.000000 9.000000
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 2
+map_Kd  assets/Gyarados/2/pm0130_00_Iris1.png
+map_d  assets/Gyarados/2/pm0130_00_Iris1.png

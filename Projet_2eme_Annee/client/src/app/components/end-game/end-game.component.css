@@ -1,0 +1,32 @@
+#endGame {
+    display: flex;
+    flex-direction: column;
+    background-color: #A5AFBAF0;
+    box-shadow: #424351 5px 5px 8px;
+    width: 340px;
+    height: auto;
+    border-radius: 8px;
+    text-align:center;
+    padding: 20px;
+    margin: 0px;
+    font-size: 18px;
+    justify-content: center;
+}
+
+.messageMain {
+ font-size: 32px;
+}
+
+#time {
+    margin: 20px 0px;
+    font-size: 18px;
+}
+
+#menuButton{
+    border-radius: 8px;
+    width: fit-content;
+    background-color: #E5F2F9;
+    color: #424351;
+    border: none;
+    margin: 0px auto;
+}

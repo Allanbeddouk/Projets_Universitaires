@@ -1,0 +1,21 @@
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+</style>
+<div id="app-initiale">
+  <div id="block">
+    <h1 id="gameTitle">Jeu des 7 différences!</h1>
+    <img id="logo"
+      src="../../assets/images/logo.png"
+      alt="Logo du jeu">
+    <label id="instruction">Entrez votre nom de joueur: </label>
+    <input #username (keyup.enter)="startGame(username.value)" type="text"
+      ng-model="string" name="Username" (input)="checkInputSize()">
+    <button #startButton mat-raised-button id="start" (click)="startGame(username.value)" disabled>Commencer</button><br>
+    <div *ngIf="errorName" class="error">Le nom utilise des caracteres non
+      alphanumeriques!</div>
+    <div *ngIf="errorSize" class="error">La taille du nom est invalide! <br> Le
+      nom doit etre plus grand que 3 et plus petit que 15 </div>
+    <div *ngIf="errorAlreadyExists" class="error">L'username que vous avez entré
+      est deja utilisé</div>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+<style>
+    @import url('https://fonts.googleapis.com/css?family=KoHo');
+    @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:700');
+</style>
+<div id="lists-container">
+    <div class="titleLayout">
+        <h1 id="titreDuJeu">Bienvenue {{username}}!</h1>  
+    </div>
+    <div id="layout">
+        <ul class="list-column simple" aria-label="Jeux simple">
+            <li *ngFor="let game of simpleGames | reverse">
+                <app-fiche [myGame]="game" [adminMode]="adminMode"></app-fiche>
+            </li>
+        </ul>
+        <ul class="list-column libre" aria-label="Jeux libre">
+            <li *ngFor="let game of freeGames | reverse">
+                <app-fiche  [myGame]="game" [adminMode]="adminMode"></app-fiche>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+#layout {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    line-height: 100%;
+    width: inherit;
+    justify-content: right;
+}
+
+.text {
+    padding-right: 6px;
+    line-height: 24px;
+}
+
+.timeDisplay {
+    line-height: 24px;
+    padding-left: 4px;
+    margin: 0px;
+    color: inherit;
+}

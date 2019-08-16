@@ -1,0 +1,47 @@
+# Blender MTL File: 'None'
+# Material Count: 4
+
+newmtl Material__102
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.374345 0.374345 0.374345
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd assets/Metagross/2/pm0376_00_BodyA1.png
+
+newmtl Material__103
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.374345 0.374345 0.374345
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd assets/Metagross/2/pm0376_00_BodyC1.png
+
+newmtl Material__104
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.374345 0.374345 0.374345
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+map_Kd assets/Metagross/2/pm0376_00_BodyB1.png
+
+newmtl Material__105
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.374345 0.374345 0.374345
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 0.000000
+illum 2
+map_Kd assets/Metagross/2/pm0376_00_Eye1.png
+map_d assets/Metagross/2/pm0376_00_Eye1.png

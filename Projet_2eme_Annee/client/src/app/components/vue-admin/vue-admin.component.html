@@ -1,0 +1,8 @@
+<mat-toolbar color = "primary">Administration
+    <button mat-stroked-button (click)="((simple.conditionVisibleSimple = true) && (libre.resetAttributes()))">Créer un jeu point de vue simple</button>
+    <button mat-stroked-button (click)="((libre.conditionVisibleLibre = true) && (simple.resetAttributes()))" >Créer un jeu en mode point de vue libre</button>
+</mat-toolbar>
+
+<app-creation-jeu-vue-libre #libre></app-creation-jeu-vue-libre>
+<app-creation-jeu-vue-simple #simple></app-creation-jeu-vue-simple>
+<app-liste-parties [adminMode]="true"></app-liste-parties>

@@ -1,0 +1,24 @@
+<div class="pageLayout" scroll="no">
+  <div class="header">
+    <div class="logo"><img id="imageLogo" src="../../../assets/images/logo.png" (click)="logoClicked()"></div>
+    <div class="gameTitle">{{gameInfo.gameName}}</div>
+    <app-chronometre class="timer" id="chrono" #chrono></app-chronometre>
+    
+  </div>
+  <div class="mainLayout">
+    <div class="gameLayout">
+      <app-images #images *ngIf="gameInfo.isSimple" [user] = "gameInfo.user" [gameName]= "gameInfo.gameName"></app-images>
+      <app-scenes #scenes *ngIf="!gameInfo.isSimple" [user] = "gameInfo.user" [gameName]= "gameInfo.gameName" ></app-scenes>
+      <div  class="errorCount" id="diffCounter" *ngIf="viewsService.isSolo"><app-cptr-diff [foundDifferences]="foundDiffLoc" [nbDifferences]="maxDiff" #diffCntLoc></app-cptr-diff></div> 
+      <div class="errorCount2Players" id="diffCounters" *ngIf="!viewsService.isSolo">
+        <div class="errorCounts" id="diffCounter">Vous: <app-cptr-diff [foundDifferences]="foundDiffLoc" [nbDifferences]="maxDiff" #diffCntLoc></app-cptr-diff></div> 
+        <div class="errorCounts" id="diffCounter">Adversaire: <app-cptr-diff [foundDifferences]="foundDiffOpp" [nbDifferences]="maxDiff" #diffCntOpp></app-cptr-diff></div> 
+      </div>
+    </div>
+    <div class="detailsLayout">
+      <app-messagerie #messageZone></app-messagerie>    
+    </div>
+  </div>
+  <div class="overlay" *ngIf="gameInfo.isWon"></div>
+  <app-end-game *ngIf="gameInfo.isWon" id="endgame" [isWinner] = "gameInfo.isWinner" [time]="time" [isSimple]="gameInfo.isSimple"></app-end-game>
+</div>

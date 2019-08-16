@@ -1,0 +1,17 @@
+# Blender MTL File: 'None'
+# Material Count: 1
+
+newmtl Material__68
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.640000 0.640000 0.640000
+Ks 0.374345 0.374345 0.374345
+Ke 0.000000 0.000000 0.000000
+Ni -1.000000
+d 1.000000
+illum 2
+<<<<<<< HEAD:Cadriciel/server/images/spider.mtl
+map_Kd assets/models/Heroes/Spiderman/spider.png
+=======
+map_Kd assets/PokeBall/1/ob0204_00.png
+>>>>>>> 923796002148f4f43c5a2a61d730cdb2dba9347d:Cadriciel/client/src/assets/PokeBall/1/PokeBall.mtl

@@ -1,0 +1,7 @@
+<div id="endGame">
+  <div class="messageMain" >{{messageTop}}</div>
+  <div class= "messageSecondary">{{messageBot}}</div>
+  <div id="time">Vous avez terminé avec un <br>
+                 temps de {{time.minutes | number:'2.0'}}:{{time.seconds | number:'2.0'}}!</div>
+  <div id="menuButton"><button  mat-button (click)="onMenu()">MENU</button></div>
+</div>

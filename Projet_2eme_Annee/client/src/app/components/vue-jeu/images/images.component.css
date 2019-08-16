@@ -1,0 +1,29 @@
+.errorI{
+    z-index: 1;
+    position: absolute;
+    font-size: 30px;
+    color: #cc0000;
+    text-shadow: #424351 2px 2px 3px;
+}
+.gameViews{
+    display: flex;
+    flex-direction: row;
+    height: 488px;
+    width: 1296px;
+    max-width: 1296px;
+    padding: 2px;
+    border-collapse: collapse;
+    justify-content: left;
+    align-items: center;    
+}
+.gameView {
+    position: relative;
+    width:644px;
+    margin: 2px;
+    height: 484px;
+    border: 2px solid #A5AFBA;
+}
+.canvas {
+    width: 640px;
+    height: 480px;
+}

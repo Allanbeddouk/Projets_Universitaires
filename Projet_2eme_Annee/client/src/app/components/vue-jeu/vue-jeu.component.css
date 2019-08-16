@@ -1,0 +1,159 @@
+.pageLayout {
+    display: flex;
+    flex-direction: column;
+    background-color: #E5F2F9;
+    min-height: 100vh;
+    min-width: 100vw;
+    width: 100vw;
+    height: 100vh;
+    max-width: 100vw;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    height: 80px;
+    min-width: 1080px;
+    line-height: 80px;
+    font-size: 28px;
+    font-family: 'KoHo', sans-serif;
+    color: #424351;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    align-items: center;
+}
+.logo {
+    flex: 1;
+    justify-content: left;
+    align-self: center;
+    line-height: 70px;
+}
+#imageLogo{
+    align-self: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    line-height: 50px;
+    margin-bottom: 8px;
+    cursor: pointer;
+}
+@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+#imageLogo:hover{
+    animation: essai 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    -webkit-animation:spin 4s ease-in-out infinite;
+    -moz-animation:spin 4s ease-in-out infinite;
+    animation:spin 4s ease-in-out alternate-reverse infinite;
+}
+
+.gameTitle {
+    text-align: center;
+    font-size: 48px;
+    flex: 1;
+}
+.timer {
+    margin-right: 0;
+    flex: 1;
+}
+
+.mainLayout {
+    display: flex;
+    direction: row;
+    flex: 1;
+}
+.gameLayout {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+}
+.detailsLayout {
+    flex: 1;
+    padding-top: 3px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+    padding-left: 1px;
+}
+
+.errorCount {
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    flex: 1;
+    width: 295px;
+}
+
+.errorCount2Players {
+    display: flex;
+    justify-content: right;
+    justify-self: center;
+    align-self: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    font-family:"koHo", sans-serif;
+    font-size: 22px;
+    color: #424351;
+    text-align: center;
+    line-height: 50px;
+    width: 600px;
+    height: 100%;
+}
+.errorCount2Players:last-child {
+    justify-content: left;
+    transform: translateX(-2px);
+}
+
+.errorCounts {
+    display: flex;
+    justify-content: right;
+    justify-self: center;
+    align-self: flex-start;
+    align-content: flex-start;
+    align-items: flex-start;
+    flex: 1;
+    width: 400px;
+    height: 100%;
+}
+
+#endgame{
+    position: fixed; 
+    width: inherit;
+    height: inherit;
+    margin: 0;
+    z-index: 3;
+    top: 50%;
+    left:50%;
+    margin-left: -170px;
+    margin-top: -120px;
+}
+
+#messageZone {
+    height: 100%;
+    width: 100%;
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;	
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .60;
+    filter: blur(1px);
+    -webkit-filter: blur(1px);
+    z-index: 2;
+}

@@ -1,0 +1,6 @@
+<div class="container">
+    <div #StepPoints class="steps">
+      <div *ngFor = "let i of arrConstruct(foundDifferences).fill(1)" class = "step completed"></div>
+      <div *ngFor = "let i of arrConstruct(nbDifferences - foundDifferences).fill(1)" class = "step"></div>
+    </div>
+</div>

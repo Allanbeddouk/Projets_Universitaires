@@ -1,0 +1,11 @@
+<div id="scenes" #page>
+  <div class="gameView" (mousedown)="sceneService.activateOriginalView()">
+      <div  *ngIf="sceneService.isMissed[0]" class="errorI" [style.left.px]="sceneService.position.x" [style.top.px]="sceneService.position.y" >Erreur</div>
+      <canvas #leftScene id="leftScene" (click)="handleUserClick($event)"></canvas>
+  </div>
+  <div class="gameView" (mousedown)="sceneService.activateModifiedView()">
+      <div *ngIf="sceneService.isMissed[1]" class="errorI" [style.left.px]="sceneService.position.x" [style.top.px]="sceneService.position.y" >Erreur</div>
+      <canvas #rightScene id="rightScene" (click)="handleUserClick($event)"></canvas>
+  </div>
+ 
+</div>

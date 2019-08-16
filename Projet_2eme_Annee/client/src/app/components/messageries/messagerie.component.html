@@ -1,0 +1,5 @@
+<div #messBox id="messBox" [scrollTop] ="messBox.scrollHeight">
+  <div id="mess">
+    <div *ngFor="let message of messages" class="text" >{{message.time | date:'HH:mm:ss'}}  {{message.text}}</div>
+  </div>
+</div>

@@ -1,0 +1,104 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css";
+#container {
+    padding: 12px;
+    padding-top: 6px;
+    width: 425px;
+    min-width: 425px;
+    background-color: #a5afba;
+    border-radius: 16px;
+    box-shadow:#424351 5px 5px 8px;
+}
+
+#ficheBody, #modesContainer{
+    display: flex;
+    flex:row;
+}
+img{
+    flex-shrink: 0;
+    width:  155px;
+    height: 155px;
+    padding-right: 5px;
+    padding-top: 5px;
+    border-radius: 7%;
+    justify-self: center;
+    align-self: center;
+}
+
+#solo{
+    width: 126px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+#oneVSone {
+    width: 126px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.times{
+    text-align: justify;
+}
+h2{
+    padding: 0px;
+    margin: 0px;
+}
+h2,p,button{
+    font-family: 'KoHo', sans-serif;
+    font-weight: bold;
+    color: #424351;
+    width:100%;
+}
+p {
+    padding: 0px;
+    margin: 3px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+#gameName{
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 32px;
+    color: #424351;
+    padding-bottom: 4px;
+    margin: 0px;
+}
+ #jouer,#creer,#joindre{   
+    color: white;
+} 
+
+@keyframes scaleIn {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.03);
+    }
+  }
+
+#container:hover {
+    animation: scaleIn;
+    animation-duration: 1.6s;
+    animation-fill-mode: both;
+    transition: ease-out;
+}
+
+  .text {
+    font-size: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;   
+    font-weight: bold;
+    font-family: 'Roboto Condensed', sans-serif; 
+    color: rgb(100, 4, 27);
+  }
+
+  button {
+      height: fit-content;
+      min-height: 35px;
+      margin-top: 4px;
+      box-shadow: #424351 2px 2px 5px;
+  }

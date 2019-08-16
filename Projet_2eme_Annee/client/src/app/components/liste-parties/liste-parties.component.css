@@ -1,0 +1,54 @@
+.list-column{
+    flex-direction: column;
+    list-style-type: none;
+    padding: 16px;
+}
+
+.list-column > *:not(:last-child) {
+    margin-bottom: 20px;
+}
+#lists-container{
+   text-align: center;
+   position: relative;
+   min-width: 90vw;
+   min-height: 100vh;
+   z-index: 1;
+   padding-top: 10px;
+   background-color: #e5f2f9;
+}
+ul:before{
+    content:attr(aria-label);
+    color:#424351;
+    font-size: 38px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+#layout{
+    display: flex;
+    flex:row;
+    justify-content: space-around;
+    max-width: 60em;
+    margin-right: auto;
+    margin-left: auto;
+}
+.titleLayout{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+#titreDuJeu {
+    margin: 0px;
+    background-color: transparent;
+    color: #424351;
+    border-radius: 16px;
+    width: fit-content;
+    font-weight: bold;
+    font-size: 54px;
+    font-family: 'Roboto Condensed', cursive; 
+    padding: 30px;
+    padding-top: 10px;
+    padding-bottom: 0px;
+}
+h1{
+    margin: 0px;
+    padding: 8px;
+}
